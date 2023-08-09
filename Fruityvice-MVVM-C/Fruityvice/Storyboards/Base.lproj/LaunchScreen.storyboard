@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruits-launcher" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-uY-g4r">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fruits Lits!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="FOC-mH-d3C">
+                                <rect key="frame" x="0.0" y="161.33333333333334" width="393" height="88.666666666666657"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="76"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoP-ks-G0I">
+                                <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="102.33333333333331"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bunch-of-fruits" translatesAutoresizingMaskIntoConstraints="NO" id="44s-nB-v85">
+                                <rect key="frame" x="48" y="298" width="297" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="YbI-Xm-kXC"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BQ-YO-hUa">
+                                <rect key="frame" x="0.0" y="250" width="393" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="44s-nB-v85" firstAttribute="top" secondItem="1BQ-YO-hUa" secondAttribute="bottom" id="3Ag-af-pNd"/>
+                            <constraint firstItem="7SX-uY-g4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Rq-7Z-EJO"/>
+                            <constraint firstItem="44s-nB-v85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="8R0-u6-2sP"/>
+                            <constraint firstItem="qoP-ks-G0I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DBe-J8-IyM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qoP-ks-G0I" secondAttribute="trailing" id="F56-1J-17r"/>
+                            <constraint firstItem="1BQ-YO-hUa" firstAttribute="top" secondItem="FOC-mH-d3C" secondAttribute="bottom" id="FZv-fb-9QI"/>
+                            <constraint firstAttribute="trailing" secondItem="7SX-uY-g4r" secondAttribute="trailing" id="Hpm-8o-sOg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOC-mH-d3C" secondAttribute="trailing" id="J05-pm-ddk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="44s-nB-v85" secondAttribute="trailing" constant="48" id="MNJ-q1-E07"/>
+                            <constraint firstItem="44s-nB-v85" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PYA-uI-lNQ"/>
+                            <constraint firstItem="7SX-uY-g4r" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QLQ-Q5-jWO"/>
+                            <constraint firstAttribute="bottom" secondItem="7SX-uY-g4r" secondAttribute="bottom" id="RTZ-Z7-bdK"/>
+                            <constraint firstItem="qoP-ks-G0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SXv-1Y-Cau"/>
+                            <constraint firstItem="1BQ-YO-hUa" firstAttribute="height" secondItem="7SX-uY-g4r" secondAttribute="height" multiplier="0.056338" id="n8Y-44-OTf"/>
+                            <constraint firstItem="FOC-mH-d3C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="okQ-4T-5xE"/>
+                            <constraint firstItem="qoP-ks-G0I" firstAttribute="height" secondItem="7SX-uY-g4r" secondAttribute="height" multiplier="0.12" id="tgX-Ec-Lyz"/>
+                            <constraint firstItem="FOC-mH-d3C" firstAttribute="top" secondItem="qoP-ks-G0I" secondAttribute="bottom" id="vv7-Jv-keL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1BQ-YO-hUa" secondAttribute="trailing" id="wAO-DR-NAa"/>
+                            <constraint firstItem="1BQ-YO-hUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x84-Vp-7Oy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bunch-of-fruits" width="500" height="354"/>
+        <image name="fruits-launcher" width="570" height="1046"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
