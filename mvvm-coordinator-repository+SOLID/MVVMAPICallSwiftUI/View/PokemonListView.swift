@@ -9,7 +9,17 @@ import SwiftUI
 
 struct PokemonListView: View {
     
-    @StateObject var digimonViewModel = DigimonListViewModel(networkManager: NetworkManager())
+    @StateObject var digimonViewModel = DigimonListViewModel(
+        pokemonRepository: PokemonRepository(
+            networkManager: NetworkManager()
+        )
+    )
+    
+    //In case of gettin data from CoreData, it can be interchangeable
+//    @StateObject var digimonViewModel2 = DigimonListViewModel(
+//        pokemonRepository: DigimonCoreDataRepository()
+//    )
+    
     @EnvironmentObject var coordinator: Coordinator
 
     @State var searchText: String = ""
@@ -85,7 +95,7 @@ struct PokemonListView: View {
     
     func getDigimons() async {
         if digimonViewModel.digimonList.count == 0 {
-            await digimonViewModel.getDigimonList(urlString: APIEndPoint.digimonListEndpoint)
+            await digimonViewModel.getDigimonList()
         }
         
         if digimonViewModel.customError != nil {

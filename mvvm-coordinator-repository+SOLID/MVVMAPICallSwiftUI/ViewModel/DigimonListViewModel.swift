@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum ViewStates {
-    case loading
-    case errorState
-    case loaded
-    case emptyView
-}
-
 @MainActor //it is similar to work with DispatchQueue.main.async
 class DigimonListViewModel: ObservableObject {
     
@@ -21,25 +14,18 @@ class DigimonListViewModel: ObservableObject {
     @Published var customError: NetworkError?
     @Published private(set) var viewStates: ViewStates = .loading
     
-    var networkManager: NetworkAbleProtocol
+    var pokemonRepository: PokemonRepositoryAction
     
-    init(networkManager: NetworkAbleProtocol) {
-        self.networkManager = networkManager
+    init(pokemonRepository: PokemonRepositoryAction) {
+        self.pokemonRepository = pokemonRepository
     }
     
-    func getDigimonList (urlString: String) async  {
+    func getDigimonList() async  {
         viewStates = .loading
 
-        guard let url = URL(string: urlString) else {
-            viewStates = .errorState
-            customError = .invalidUrlError
-            return
-        }
-        
-        let urlRequest = URLRequest(url: url)
         do {
-            let data = try await networkManager.getDataFromApi(urlRequest: urlRequest)
-            self.digimonList = try JSONDecoder().decode([Digimon].self, from: data)
+            let list = try await pokemonRepository.getListOfDigimons()
+            self.digimonList = list
             guard self.digimonList.isEmpty else {
                 viewStates = .loaded
                 return
@@ -47,6 +33,7 @@ class DigimonListViewModel: ObservableObject {
             viewStates = .emptyView
         }catch let error {
             viewStates = .errorState
+                        
             switch error {
             case is DecodingError:
                 customError = NetworkError.parsingError

@@ -90,3 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 Fruityvice-MVVM-C/.DS_Store
+
+.DS_Store

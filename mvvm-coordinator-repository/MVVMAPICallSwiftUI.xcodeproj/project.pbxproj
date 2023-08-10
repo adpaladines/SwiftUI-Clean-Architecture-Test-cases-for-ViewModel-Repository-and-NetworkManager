@@ -29,6 +29,9 @@
 		025B14392A68147100C49D3D /* digimonIncorrectData.json in Resources */ = {isa = PBXBuildFile; fileRef = 025B14382A68147100C49D3D /* digimonIncorrectData.json */; };
 		02A5A19C2A7AB59B00B57672 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5A19B2A7AB59B00B57672 /* Coordinator.swift */; };
 		02A5A19E2A7AB98900B57672 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5A19D2A7AB98900B57672 /* MainPageView.swift */; };
+		DDD463E42A8461E20004B2D1 /* DigimonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD463E32A8461E10004B2D1 /* DigimonRepository.swift */; };
+		DDD463E62A84679D0004B2D1 /* PokemonRepositoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD463E52A84679D0004B2D1 /* PokemonRepositoryAction.swift */; };
+		DDD463E82A8468030004B2D1 /* DigimonCoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD463E72A8468030004B2D1 /* DigimonCoreDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		025B14382A68147100C49D3D /* digimonIncorrectData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = digimonIncorrectData.json; sourceTree = "<group>"; };
 		02A5A19B2A7AB59B00B57672 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		02A5A19D2A7AB98900B57672 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		DDD463E32A8461E10004B2D1 /* DigimonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonRepository.swift; sourceTree = "<group>"; };
+		DDD463E52A84679D0004B2D1 /* PokemonRepositoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepositoryAction.swift; sourceTree = "<group>"; };
+		DDD463E72A8468030004B2D1 /* DigimonCoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCoreDataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		025B13DC2A66CB3300C49D3D /* MVVMAPICallSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DDD463E22A8461C70004B2D1 /* Repository */,
 				02A5A19A2A7AB58B00B57672 /* Coordinator */,
 				025B14102A66CF8500C49D3D /* Manager */,
 				025B14092A66CB4E00C49D3D /* ViewModel */,
@@ -226,6 +233,16 @@
 				02A5A19B2A7AB59B00B57672 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DDD463E22A8461C70004B2D1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DDD463E32A8461E10004B2D1 /* DigimonRepository.swift */,
+				DDD463E52A84679D0004B2D1 /* PokemonRepositoryAction.swift */,
+				DDD463E72A8468030004B2D1 /* DigimonCoreDataRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				025B14132A66CFA000C49D3D /* NetworkManager.swift in Sources */,
+				DDD463E82A8468030004B2D1 /* DigimonCoreDataRepository.swift in Sources */,
 				025B140F2A66CDB300C49D3D /* DigimonListViewModel.swift in Sources */,
 				02A5A19C2A7AB59B00B57672 /* Coordinator.swift in Sources */,
 				025B13E02A66CB3300C49D3D /* PokemonListView.swift in Sources */,
@@ -368,12 +386,14 @@
 				025B14172A66D0B100C49D3D /* NetworkResponseProtocol.swift in Sources */,
 				025B13DE2A66CB3300C49D3D /* MVVMAPICallSwiftUIApp.swift in Sources */,
 				025B140B2A66CC3800C49D3D /* Digimon.swift in Sources */,
+				DDD463E42A8461E20004B2D1 /* DigimonRepository.swift in Sources */,
 				02A5A19E2A7AB98900B57672 /* MainPageView.swift in Sources */,
 				025B141B2A66DB0400C49D3D /* PokemonDetailsView.swift in Sources */,
 				025B140D2A66CCB100C49D3D /* APIEndPoint.swift in Sources */,
 				025B14332A680D8100C49D3D /* JsonManager.swift in Sources */,
 				025B141D2A66E9A700C49D3D /* NetworkError.swift in Sources */,
 				025B14152A66D07000C49D3D /* NetworkAbleProtocol.swift in Sources */,
+				DDD463E62A84679D0004B2D1 /* PokemonRepositoryAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,8 @@ You can use this endpoint if you want for [API-URL](https://gist.githubuserconte
     3. List What frameworks you are going to use
 
 ### Process
-- [ ] SwiftUI Clean Architecture / Repository Pattern
+- [x] SwiftUI Repository Pattern
+- [x] SwiftUI Clean Architecture / Repository Pattern
 - [ ] Final Project Idea Discussion
 
 [swift-image]:https://img.shields.io/badge/Swift-5.8.1-orange?style=for-the-badge
