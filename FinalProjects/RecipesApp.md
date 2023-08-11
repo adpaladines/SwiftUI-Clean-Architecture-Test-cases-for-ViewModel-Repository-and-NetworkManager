@@ -16,8 +16,5 @@ Functionalities:
 
 
 ### Images:
-<img width="310" alt="image" src="https://github.com/apaladines-techconsulting/Assignment_30/assets/138136886/3477ae65-3326-4b33-a800-45a625ae5c53">
+<img width="1134" alt="image" src="https://github.com/apaladines-techconsulting/Assignment_30/assets/138136886/55ab79ec-0e25-472c-8816-0783660c2963">
 
-<img width="310" alt="image" src="https://github.com/apaladines-techconsulting/Assignment_30/assets/138136886/3131b3e2-d0ec-404c-96fe-8ea28d287096">
-
-<img width="1200" alt="image" src="https://github.com/apaladines-techconsulting/Assignment_30/assets/138136886/c0c70f90-6050-4d6f-bc39-9e3578903818">
